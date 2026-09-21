@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/themes/prism-dark.min.css">
+    <title>Programação Web</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="etec.png" alt="logo-etec">
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#oq">O que é?</a>
+            <a href="#tech">Tecnologias</a>
+            <a href="#funciona">Funcionamento</a>
+            <a href="#carreira">Carreiras</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <div class="text-box">
+                <span class="dif-color">programação web</span>
+                <h1 class="normal-color">Programar a Web</h1> 
+                <h1 class="dif-color">é criar o que você vê</h1>
+                <p>Descubra o que existe por trás dos sites que você acessa todos os dias e conheça as tecnologias que tornam a web possível.</p>
+            </div>
+            <img class="section-img" src="capa.png" alt="capa">
+        </section>
+        <section id="oq">
+            <div class="text-box">
+                <span class="dif-color">01 / O que é?</span>
+                <h1 class="normal-color">O que é </h1> 
+                <h1 class="dif-color">programação web</h1>
+                <p>Programação Web é o desenvolvimento de sites e aplicações que funcionam na internet. Ela combina diferentes tecnologias para criar páginas interativas visuais e funcionais, que podem ser acessadas de qualquer lugar, em qualquer dispositivo.</p>
+            </div>
+            <img class="section-img" src="oq.png" alt="capa">
+        </section>
+        <section id="tech">
+            <div class="sub-box">
+                <div class="text-box">
+                    <span class="dif-color">02 / tecnologias</span>
+                    <h1 class="normal-color">As principais </h1> 
+                    <h1 class="dif-color">tecnologias</h1>
+                    <p>Cada tecnologia tem um papel importante na construção de um site. Juntas, elas formam a base da programação web.</p>
+                </div>
+                <img src="tech.png" alt="capa">
+            </div>
+            <div class="sub-box">
+                <div class="tech-box">
+                    <div class="titulo">
+                        <img src="html.png" alt="">
+                        <span>HTML</span><br>
+                        <span class="dif-color">Estrutura</span>
+                    </div>
+                    <p>É o esqueleto da página. Define o conteúdo e a organização do site.</p>
+                    <div class="codigo">
+                        <pre><code class="language-html">
+&lt;div&gt;
+    &lt;p&gt;Hello, world!&lt;/p&gt;
+&lt;/div&gt;
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="tech-box">
+                    <div class="titulo">
+                        <img src="css.png" alt="">
+                        <span>CSS</span><br>
+                        <span class="dif-color">Estilo</span>
+                    </div>
+                    <p>Deixa o site bonito e organizado. Cuida das cores, fontes, layout e design.</p>
+                    <div class="codigo">
+                        <pre><code class="language-css">
+.botao {
+    background: #6c63ff;
+    color: #fff;
+}
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="tech-box">
+                    <div class="titulo">
+                        <img src="js.png" alt="">
+                        <span>JavaScript</span><br>
+                        <span class="dif-color">Interação</span>
+                    </div>
+                    <p>Adiciona dinamismo e faz o site funcionar de verdade. É o que permite ações, animações e respostas do usuário.</p>
+                    <div class="codigo">
+                        <pre><code class="language-javascript">
+document.querySelector('.botao')
+.addEventListener('click', () => {
+    alert('Hello, world!');
+});
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="tech-box">
+                    <div class="titulo">
+                        <img src="html.png" alt="">
+                        <span>SQL</span><br>
+                        <span class="dif-color">Banco de Dados</span>
+                    </div>
+                    <p>Linguagem de consulta usada para armazenar, organizar e manipular dados em bancos de dados relacionais.</p>
+                    <div class="codigo">
+                        <pre><code class="language-sql">
+SELECT nome, email
+FROM usuarios
+WHERE ativo = 1
+ORDER BY nome;
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="tech-box">
+                    <div class="titulo">
+                        <img src="html.png" alt="">
+                        <span>PHP</span><br>
+                        <span class="dif-color">Backend</span>
+                    </div>
+                    <p>Linguagem de programação amplamente usada no desenvolvimento web, especialmente para aplicações dinâmicas e sistemas.</p>
+                    <div class="codigo">
+                        <pre><code class="language-php">
+&lt;?php
+    $nome = 'Larissa';
+    echo "olá, $nome!";
+?>
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="tech-box">
+                    <div class="titulo">
+                        <img src="html.png" alt="">
+                        <span>Node.js</span><br>
+                        <span class="dif-color">Backend</span>
+                    </div>
+                    <p>Ambiente de execução JavaScript que permite criar aplicações do lado do servidor, usando o mesmo JavaScript do front-end.</p>
+                    <div class="codigo">
+                        <pre><code class="language-javascript">
+const express = require('express');
+const app = express();
+app.get('/', (req, res) => {
+    res.send('servidor rodando!');
+});
+app.listen(3000, () => console.log('Porta 3000'));
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="funciona"></section>
+        <section id="carreira"></section>
+    </main>
+    <footer>
+        <p>Guilherme Miguel, Larissa Maiero, Manuela Fernandes, Paula Pires, Pedro Henrique</p>
+        <p>&#169;2026</p>
+    </footer>   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-markup-templating.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.30.0/components/prism-php.min.js"></script>
+</body>
+</html>
