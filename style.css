@@ -56,13 +56,12 @@ main {
     justify-content: center;
     align-items: center;
 }
-section:first-child {margin-top: 100px;}
 section {
     display: flex;
     position: relative;
-    width: 85%;
+    width: 100%;
     height: auto;
-    min-height: 500px;
+    min-height: 700px;
     padding: 10px;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +70,7 @@ section {
 .text-box {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 40%;
     height: 100%;
     padding: 20px;
 }
@@ -101,13 +100,15 @@ section p {
 }
 .section-img {
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 0;
     bottom: 0;
     width: 55%;
     height: 100%;
+    box-shadow: 0 0 20px 5px #cc16e1;
+    border-radius: 12px;
 }
-#tech {flex-direction: column;}
+#tech-section {flex-direction: column;}
 .sub-box {
     display: flex;
     width: 100%;
@@ -115,28 +116,42 @@ section p {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.sub-box img {
+    width: 80px;
+    height: auto;
+}
 .tech-box {
     display: flex;
     flex-direction: column;
     width: 30%;
     height: 100%;
-    padding: 10px;
+    padding: 15px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to right, #9900ff, #dc9bf8, #cc16e1);
+    border-radius: 20px; 
+    /* Define a espessura da borda através do padding */
+    border: 3px solid transparent; 
+    /* 1º Gradiente: Cor de fundo interna | 2º Gradiente: As cores da borda */
+    background-image: linear-gradient(#00091F, #00091F), linear-gradient(to right, #9900ff, #dc9bf8, #cc16e1);
+    /* recorta o primeiro fundo no conteúdo e o segundo na borda */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
 .titulo {
     display: flex;
     width: 100%;
     height: auto;
-    justify-content: space-between;
     align-items: center;
+    gap: 15px;
+}
+.titulo-text {
+    display: flex;
+    flex-direction: column;
 }
 .codigo {
-    width: 100%;
-    height: auto;
+    width: max-content;
+    height: max-content;
     background: #06132d;
     border: 3px solid transparent;
     box-shadow: 0px 0px 15px 2px #cc16e1;
