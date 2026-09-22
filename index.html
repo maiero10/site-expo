@@ -42,14 +42,13 @@
         </section>
         <br id="tech"><br><br>
         <section id="tech-section">
-            <div class="sub-box">
-                <div class="text-box">
-                    <span class="dif-color">02 / tecnologias</span>
+            <div class="sub-box tech">
+                <span class="dif-color">02 / tecnologias</span>
+                <div style="display: flex; gap: 10px;">
                     <h1 class="normal-color">As principais </h1> 
                     <h1 class="dif-color">tecnologias</h1>
-                    <p>Cada tecnologia tem um papel importante na construção de um site. Juntas, elas formam a base da programação web.</p>
                 </div>
-                <img src="tech.png" alt="capa">
+                <p>Cada tecnologia tem um papel importante na construção de um site. Juntas, elas formam a base da programação web.</p>
             </div>
             <div class="sub-box">
                 <div class="tech-box">
@@ -62,11 +61,9 @@
                     </div>
                     <p>É o esqueleto da página. Define o conteúdo e a organização do site.</p>
                     <div class="codigo">
-                        <pre><code class="language-html">
-&lt;div&gt;
+                        <pre><code class="language-html">&lt;div&gt;
     &lt;p&gt;Hello, world!&lt;/p&gt;
-&lt;/div&gt;
-                        </code></pre>
+&lt;/div&gt;</code></pre>
                     </div>
                 </div>
                 <div class="tech-box">
@@ -79,12 +76,10 @@
                     </div>
                     <p>Deixa o site bonito e organizado. Cuida das cores, fontes, layout e design.</p>
                     <div class="codigo">
-                        <pre><code class="language-css">
-.botao {
+                        <pre><code class="language-css">.botao {
     background: #6c63ff;
     color: #fff;
-}
-                        </code></pre>
+}</code></pre>
                     </div>
                 </div>
                 <div class="tech-box">
@@ -97,12 +92,10 @@
                     </div>
                     <p>Adiciona dinamismo e faz o site funcionar de verdade. É o que permite ações, animações e respostas do usuário.</p>
                     <div class="codigo">
-                        <pre><code class="language-javascript">
-document.querySelector('.botao')
+                        <pre><code class="language-javascript">document.querySelector('.botao')
 .addEventListener('click', () => {
     alert('Hello, world!');
-});
-                        </code></pre>
+});</code></pre>
                     </div>
                 </div>
                 <div class="tech-box">
@@ -115,12 +108,10 @@ document.querySelector('.botao')
                     </div>
                     <p>Linguagem de consulta usada para armazenar, organizar e manipular dados em bancos de dados relacionais.</p>
                     <div class="codigo">
-                        <pre><code class="language-sql">
-SELECT nome, email
+                        <pre><code class="language-sql">SELECT nome, email
 FROM usuarios
 WHERE ativo = 1
-ORDER BY nome;
-                        </code></pre>
+ORDER BY nome;</code></pre>
                     </div>
                 </div>
                 <div class="tech-box">
@@ -133,12 +124,10 @@ ORDER BY nome;
                     </div>
                     <p>Linguagem de programação amplamente usada no desenvolvimento web, especialmente para aplicações dinâmicas e sistemas.</p>
                     <div class="codigo">
-                        <pre><code class="language-php">
-&lt;?php
+                        <pre><code class="language-php">&lt;?php
     $nome = 'Larissa';
     echo "olá, $nome!";
-?>
-                        </code></pre>
+?></code></pre>
                     </div>
                 </div>
                 <div class="tech-box">
@@ -151,14 +140,12 @@ ORDER BY nome;
                     </div>
                     <p>Ambiente de execução JavaScript que permite criar aplicações do lado do servidor, usando o mesmo JavaScript do front-end.</p>
                     <div class="codigo">
-                        <pre><code class="language-javascript">
-const express = require('express');
+                        <pre><code class="language-javascript">const express = require('express');
 const app = express();
 app.get('/', (req, res) => {
     res.send('servidor rodando!');
 });
-app.listen(3000, () => console.log('Porta 3000'));
-                        </code></pre>
+app.listen(3000, () => console.log('Porta 3000'));</code></pre>
                     </div>
                 </div>
             </div>
