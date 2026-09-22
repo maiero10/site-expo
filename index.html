@@ -44,9 +44,8 @@
         <section id="tech-section">
             <div class="sub-box tech">
                 <span class="dif-color">02 / tecnologias</span>
-                <div style="display: flex; gap: 10px;">
-                    <h1 class="normal-color">As principais </h1> 
-                    <h1 class="dif-color">tecnologias</h1>
+                <div class="span-maior" style="display: flex; gap: 10px;">
+                    <h1 class="normal-color">As principais <span class="dif-color">tecnologias</span></h1> 
                 </div>
                 <p>Cada tecnologia tem um papel importante na construção de um site. Juntas, elas formam a base da programação web.</p>
             </div>
@@ -126,7 +125,7 @@ ORDER BY nome;</code></pre>
                     <div class="codigo">
                         <pre><code class="language-php">&lt;?php
     $nome = 'Larissa';
-    echo "olá, $nome!";
+    echo "olá, &#36;nome!";
 ?></code></pre>
                     </div>
                 </div>
@@ -140,7 +139,7 @@ ORDER BY nome;</code></pre>
                     </div>
                     <p>Ambiente de execução JavaScript que permite criar aplicações do lado do servidor, usando o mesmo JavaScript do front-end.</p>
                     <div class="codigo">
-                        <pre><code class="language-javascript">const express = require('express');
+                        <pre><code class="language-javascript nodejs">const express = require('express');
 const app = express();
 app.get('/', (req, res) => {
     res.send('servidor rodando!');
