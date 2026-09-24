@@ -44,8 +44,9 @@
         <section id="tech-section">
             <div class="sub-box tech">
                 <span class="dif-color">02 / tecnologias</span>
-                <div class="span-maior" style="display: flex; gap: 10px;">
-                    <h1 class="normal-color">As principais <span class="dif-color">tecnologias</span></h1> 
+                <div style="display: flex; gap: 10px;">
+                    <h1 class="normal-color">As principais </h1> 
+                    <h1 class="dif-color">tecnologias</h1>
                 </div>
                 <p>Cada tecnologia tem um papel importante na construção de um site. Juntas, elas formam a base da programação web.</p>
             </div>
@@ -125,7 +126,7 @@ ORDER BY nome;</code></pre>
                     <div class="codigo">
                         <pre><code class="language-php">&lt;?php
     $nome = 'Larissa';
-    echo "olá, &#36;nome!";
+    echo "olá, $nome!";
 ?></code></pre>
                     </div>
                 </div>
@@ -139,7 +140,7 @@ ORDER BY nome;</code></pre>
                     </div>
                     <p>Ambiente de execução JavaScript que permite criar aplicações do lado do servidor, usando o mesmo JavaScript do front-end.</p>
                     <div class="codigo">
-                        <pre><code class="language-javascript nodejs">const express = require('express');
+                        <pre><code class="language-javascript">const express = require('express');
 const app = express();
 app.get('/', (req, res) => {
     res.send('servidor rodando!');
@@ -149,8 +150,48 @@ app.listen(3000, () => console.log('Porta 3000'));</code></pre>
                 </div>
             </div>
         </section>
-        <section id="funciona"></section>
-        <section id="carreira"></section>
+        <section id="carreira">
+            <section id="carreira">
+            <div class="sub-box tech">
+                <span class="dif-color">03 / carreiras</span>
+                <div class="span-maior" style="display: flex; gap: 10px;">
+                    <h1 class="normal-color">Onde posso trabalhar com <span class="dif-color">programação web?</span></h1> 
+                </div>
+                <p>Com o conhecimento em programação web, você pode atuar em diversas áreas do mercado de tecnologia. Essa área está em constante crescimento e oferece muitas oportunidades, tanto no Brasil quanto no exterior.</p>
+            </div>
+            <div class="sub-box">
+                <div class="tech-box jobs-box">
+                    <span class="dif-color"">Front-end Developer</span>
+                    <p>Cria a parte visual e interativa dos sites, usando tecnologias como HTML, CSS e JavaScript.</p>
+                </div>
+                <div class="tech-box jobs-box">
+                    <span class="dif-color">Back-end developer</span>
+                    <p>Cuida da lógica de programação e do funcionamento por trás do site, com linguagens como PHP, Node.js, Python, entre outras.</p>
+                   
+                </div>
+                <div class="tech-box jobs-box">
+                    <span class="dif-color">Full Stack Developer</span>
+                    <p>Trabalha tanto no front-end quando no back-end, unindo o visual e a lógica do sistema.</p>
+                   
+                </div>
+                <div class="tech-box jobs-box">
+                    <span class="dif-color">Desenvolvedor Mobile</span>
+                    <p>Cria aplicativos para dispositivos móveis, como smartphones e tablets.</p>
+                    
+                </div>
+                <div class="tech-box jobs-box">
+                    <span class="dif-color">Administrador de banco de dados</span>
+                    <p>Gerencia e organiza informações, garantindo a segurança e o bom funcionamento dos dados.</p>
+                    
+                </div>
+                <div class="tech-box jobs-box">
+                    <span class="dif-color">ui/ux designer</span>
+                    <p>Trabalha na experiência e no design do usuário, deixando os sites e aplicativos mais intuitivos e bonitos.</p>
+                    
+                </div>
+            </div>
+        </section><br><br><br>
+        </section>
     </main>
     <footer>
         <p>Guilherme Miguel, Larissa Maiero, Manuela Fernandes, Paula Pires, Pedro Henrique</p>

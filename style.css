@@ -108,14 +108,13 @@ section p {
     box-shadow: 0 0 20px 5px #cc16e1;
     border-radius: 12px;
 }
-#tech-section {flex-direction: column;}
+#tech-section, #carreira {flex-direction: column;}
 .tech {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
 }
-.span-maior span {font-size: 1em;}
 .sub-box {
     display: flex;
     width: 100%;
@@ -185,6 +184,10 @@ section p {
     text-transform: none !important;
     margin: 0 !important;
 }
+/*SEÇÃO DE CARREIRAS*/
+.jobs-box {text-align: center;}
+.jobs-box span {font-size: 2em;}
+.jobs-box p {font-size: 1.2em;}
 /*FOOTER (RODAPÉ)*/
 footer {
     display: flex;
@@ -224,6 +227,7 @@ footer p:last-child {font-size: 0.8em;}
         align-items: center;
         gap: 10px;
     }
+    .jobs-box {height: 300px;}
 }
 @media (max-width: 1400px) {
     section {
@@ -239,21 +243,26 @@ footer p:last-child {font-size: 0.8em;}
     }
     .tech-box {
         height: 500px;
-        width: 32%;
     }
     .codigo code {
-        font-size: 0.8em !important;
+        font-size: 0.7em !important;
     }
     .tech-box p {
         line-height: 1.5em;
     }
+    .jobs-box {height: 250px;}
 }
 @media (max-width: 1024px) {
     .tech-box {
-        width: 48%;
+        height: 400px;
+        width: 45%;
     }
     .codigo code {
-        font-size: 0.9em !important;
+        font-size: 0.8em !important;
+    }
+    .codigo {
+        width: 100%;
+        height: 100%;
     }
 }
 @media (max-width: 768px) {
@@ -271,43 +280,43 @@ footer p:last-child {font-size: 0.8em;}
     .text-box {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 45%;
         height: 100%;
-        padding: 5px;
+        padding: 10px;
     }
     section span {
-        font-size: 0.6em;
+        font-size: 0.8em;
         font-weight: bold;
         margin-bottom: 10px;
     }
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
         text-transform: uppercase;
     }
     section p {
-        font-size: 0.7em;
+        font-size: 0.8em;
         line-height: 1.5em;
         margin: 10px 0;
     }
     .section-img {
         position: absolute;
         right: 10px;
-        top: 25%;
-        width: 45%;
-        height: 50%;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
         box-shadow: 0 0 20px 5px #cc16e1;
         border-radius: 12px;
     }
     .tech-box {
+        height: 400px;
         width: 100%;
     }
-    .tech-box span {font-size: 0.9em;}
-    .tech-box p {font-size: 1em;}
     .codigo {
         width: 80%;
         height: 100%;
     }
     .codigo code {
-        font-size: 1.1em !important;
+        font-size: 1em !important;
     }
 }
